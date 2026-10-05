@@ -8,6 +8,7 @@ const HOUSEHOLD_REPLACEMENTS:[RegExp,string][]=[
   [/210 ml/g,"1 su bardağı + 2 çay kaşığı"],
   [/200 ml/g,"1 su bardağı"],
   [/190 ml/g,"1 su bardağına yakın"],
+  [/180–200 ml/g,"1 su bardağına yakın"],
   [/180 ml/g,"1 su bardağına yakın"],
   [/160 ml/g,"yaklaşık 3\/4 su bardağı"],
   [/150 ml/g,"yaklaşık 3\/4 su bardağı"],
