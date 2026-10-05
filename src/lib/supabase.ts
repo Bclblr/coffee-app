@@ -1,7 +1,18 @@
+import Constants from "expo-constants";
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL;
-const supabasePublishableKey = process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+const extra = Constants.expoConfig?.extra as
+  | {
+      supabaseUrl?: string;
+      supabasePublishableKey?: string;
+    }
+  | undefined;
+
+const supabaseUrl =
+  extra?.supabaseUrl ?? process.env.EXPO_PUBLIC_SUPABASE_URL;
+const supabasePublishableKey =
+  extra?.supabasePublishableKey ??
+  process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
 if (!supabaseUrl || !supabasePublishableKey) {
   throw new Error(
