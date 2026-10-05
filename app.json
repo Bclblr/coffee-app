@@ -1,0 +1,1 @@
+{"expo":{"name":"Coffee App","slug":"coffee-app","version":"1.0.0","orientation":"portrait","scheme":"coffeeapp","userInterfaceStyle":"automatic","plugins":["expo-router"],"ios":{"supportsTablet":true},"android":{"adaptiveIcon":{"backgroundColor":"#F5F1EA"}},"web":{"bundler":"metro","output":"static"}}}
